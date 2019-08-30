@@ -1,0 +1,13 @@
+arm
+x86
+*.aux
+*.bbl
+*.blg
+*.log
+*.out
+main.pdf
+*.synctex
+*.synctex.gz
+main.synctex.gz
+
+
