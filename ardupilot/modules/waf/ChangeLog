@@ -1,0 +1,96 @@
+NEW IN WAF 2.0.9
+----------------
+* Add dependencies on scriptlet outputs
+* Made options optional for cython waftool
+* Improve doxygen error handling
+
+NEW IN WAF 2.0.8
+----------------
+* Improve Windows console encoding outputs on Python 3.6 and Japanese code page #2163
+* Improve msvc detection on Python 3.6 and Japanese code page #2155
+* Improve moc/rcc flag parsing with msvc #2169
+* Improve Eclipse project generation #2166 #2165 #2164 #2149 #2145
+* Improve Boost project detection on dpkg-based systems #2146
+
+NEW IN WAF 2.0.7
+----------------
+* Apply priorities to dynamically-generated tasks #2137
+* Fix upcoming Python 3.7 incompatibilities #2126
+* Fix Python3 support in extras/xcode6.py #2121
+* Improve priority support in extras/swig.py #2137
+* Improve support extras/protoc.py #2135
+* Improve argument handling in extras/clang_compilation_database.py #2127
+* Add glib DBus bindings in extras/gdbus.py #2134
+* Avoid name collisions for precompiled headers and libraries with similar names in extras/pch.py #2122
+
+NEW IN WAF 2.0.6
+----------------
+* Add Task.deep_inputs to enable further dependencies on input file tasks
+* Set unit tests to depend on input file tasks instead of timestamps
+
+NEW IN WAF 2.0.5
+----------------
+* Force unit tests to depend on the executable creation time besides file contents
+* Enhance the Eclipse project generator
+* Update the cuda examples
+
+NEW IN WAF 2.0.4
+----------------
+* Enable more advanced warnings of ant_glob on build folders in verbose mode
+* Defer node.ant_glob(..., generator=True) evaluation
+* Enable 'waf clean' to get the list of files to remove from bld.clean_files
+* Define the environment variable WAF_NO_PREFORK to skip pre-forking
+* Fix Can't pickle local object '_createenviron.<locals>.encode' exceptions (Python 3.6)
+* Improve the Erlang module #2095
+* Add task target to parallel_debug outputs #2091
+
+NEW IN WAF 2.0.3
+----------------
+* Enable install_path=None for Python targets #2087
+* Skip empty or duplicates in java user classpath #2084
+* Change the unit test summary color scheme to use green and red colors
+* Improve the deadlock error message
+* Report sys.path values from Context.load_tool to improve error messages
+* Cache qrc uic->h conversions to enable qrc re-use across targets
+* Output long-running tasks outputs immediately using bld(rule=..., stdout=None)
+
+NEW IN WAF 2.0.2
+----------------
+* Improve Intel Fortran compiler detection on Windows #2063
+* Ensure that the task count starts at 1 in the build outputs
+* Add a --pdb option to start pdb on unexpected exceptions #2052
+* Fix conflicting qm/qrc re-used output files for multiple targets #2065
+* Add java support in protobuf (extras) #2049
+* Add a java test example (extras) #2062
+* Enable symbol processing for empty targets (extras) #2053
+
+NEW IN WAF 2.0.1
+----------------
+* Improve the default preprocessor behaviour for gcc/msvc
+* Accept task objects in Build.add_to_group for compatibility reasons
+* Prevent xcode generator from overwriting existing features #2038
+* Fix self.includes data scope #2035
+* Fix Node.ant_glob case sensitivity regression #2034
+* Fix Logs.verbose options regression #2033
+
+NEW IN WAF 2.0.0
+----------------
+* Provide a new priority system to improve scalability on complex builds
+* Provide TaskGroup objects to improve scalability on complex builds
+* Force new files into the build directory by default (use Node objects to bypass)
+* Provide built-in support for building over UNC paths
+* Simplify the Task class hierarchy; TaskBase is removed
+* Display commands as string with "WAF_CMD_FORMAT=string waf build -v"
+* Have ant_glob(..., generator=True) return a Python generator
+* Accept nested lists and generators in bld(source=...)
+* Sort TaskGen methods in alphabetical order by reversing TaskGen.prec order
+
+* Remove 'ut_fun' from waf_unit_test.py
+* Remove Node.sig and Node.cache_sig
+* Remove the BuildContext.rule decorator
+* Remove Task.update_outputs, Task.always_run
+* Remove atleast-version, exact-version and max-version from conf.check_cfg
+* Remove c_preproc.trimquotes
+* Remove field_name, type_name, function_name from conf.check() tests
+* Remove extras/mem_reducer.py as a better solution has been merged
+* Remove Utils.ex_stack (use traceback.format_exc())
