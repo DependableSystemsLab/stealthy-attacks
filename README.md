@@ -22,4 +22,19 @@ To run an existing missions, use this command:
 wp load ../Tools/autotest/ArduPlane-Missions/CMAC-toff-loop.txt
 ```
 
+# Running ArduPilot locally
+To use a local copy of ArduPilot and trigger the attacks in the simulator use the following steps:
+* Clone the Project
+* Run ardupilot locally
+```bash
+cd stealthy-attacks/ardupilot
+sim_vehicle.py --console --map
+```
+Follow the steps given here http://ardupilot.org/dev/docs/copter-sitl-mavproxy-tutorial.html for further details. 
+
+# Deploying Binaries in Vehicles
+The deployable binaries for Pixhawk2 vehciles are provided. For more information on deploying custom firmware, please follow the instructions given here http://firmware.ardupilot.org/ 
+
+
+
 
