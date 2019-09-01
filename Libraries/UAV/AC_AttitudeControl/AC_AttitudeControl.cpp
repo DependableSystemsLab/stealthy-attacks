@@ -243,13 +243,13 @@ void AC_AttitudeControl::input_euler_angle_roll_pitch_euler_rate_yaw(float euler
     /*
      * Artificial Delay Attack
      */
-    /*startTimer();
+    startTimer();
     check = checkTimeDelayAttack();
     if(check == 1)
     {
       check = delayAttack(5);
-    }*/
-    usleep(5);
+    }
+
     /*
      * ******************************
      */

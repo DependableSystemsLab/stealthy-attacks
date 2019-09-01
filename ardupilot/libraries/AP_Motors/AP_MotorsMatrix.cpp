@@ -888,7 +888,7 @@ int AP_MotorsMatrix::checkTimer()
 
 void AP_MotorsMatrix::initAttackTimer()
 {
-    tAttack = clock() + (5 * CLOCKS_PER_SEC);
+    tAttack = clock() + (1 * CLOCKS_PER_SEC);
 }
 
 int AP_MotorsMatrix::checkAttackTimer()
@@ -914,7 +914,7 @@ int AP_MotorsMatrix::checkAttackTimer()
 
 void AP_MotorsMatrix::initNoAttackTimer()
 {
-    tNoAttack = clock() + (3 * CLOCKS_PER_SEC);
+    tNoAttack = clock() + (4 * CLOCKS_PER_SEC);
 }
 
 int AP_MotorsMatrix::checkNoAttackTimer()
