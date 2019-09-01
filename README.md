@@ -12,7 +12,7 @@ Build docker image
 docker build -t stealthy-attacks DockerFile/.
 ```
 Run docker Simulator
-Simulator can be executed following the steps given here http://ardupilot.org/dev/docs/setting-up-sitl-on-linux.html 
+The simulator can be executed by running the docker image and then following the steps given here http://ardupilot.org/dev/docs/setting-up-sitl-on-linux.html 
 For easy execution we have provided a script that will start the simultor. 
 ```bash
 ./startSimulator.sh copter --console --map
