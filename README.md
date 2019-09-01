@@ -39,7 +39,7 @@ sim_vehicle.py --console --map
 ```
 Follow the steps given here http://ardupilot.org/dev/docs/copter-sitl-mavproxy-tutorial.html for further details. 
 
-# Deploying Binaries in Vehicles
+# Deploying Firmware in Vehicles
 The deployable firmware for Pixhawk2 vehicles are provided. For more information on deploying custom firmware,please follow the instructions given here http://firmware.ardupilot.org/. As firmwares can only be deployed in RVs builton Pixhawk platform, we provide videos showing the effects of the attacks. The demo videos are available here https://bit.ly/2HG9Qnw
 
 
