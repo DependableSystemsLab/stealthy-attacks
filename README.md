@@ -20,6 +20,8 @@ For easy execution we have provided a script that will start the simultor.
 To run a mission, use this command:
 ```bash
 wp load ../Tools/autotest/mission-1.txt
+mode guided
+arm throttle
 takeoff 100
 wp set 2
 mode auto
