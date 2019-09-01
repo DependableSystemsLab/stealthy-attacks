@@ -972,7 +972,7 @@ void AC_PosControl::run_xy_controller(float dt)
     /*
      * False Data Injection
      */
-    /*startFlightTimer();
+    startFlightTimer();
     int checkTime = checkTimer();
     if(checkTime == 1)
     {
@@ -982,7 +982,7 @@ void AC_PosControl::run_xy_controller(float dt)
             _pos_target.x = _pos_target.x + falseData;
         }
         flag = checkAttackTime;
-    }*/
+    }
 
     float ekfGndSpdLimit, ekfNavVelGainScaler;
     AP::ahrs_navekf().getEkfControlLimits(ekfGndSpdLimit, ekfNavVelGainScaler);
