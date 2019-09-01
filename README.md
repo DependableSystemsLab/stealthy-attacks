@@ -1,5 +1,5 @@
 # Stealthy Attacks Against Robotic Autonomous Vehicles
-This project contains simulations for triggering stealthy attacks against robotic vehicles. We use ArduPilot SITL to demonstrate three types of stealthy attacks namely: i) False Data Injection, ii) Artificial Delay, iii) Switch Mode attacks, on copter and rover.   
+This project contains simulations for triggering stealthy attacks against robotic vehicles. We use ArduPilot SITL to demonstrate three types of stealthy attacks namely: i) False Data Injection, ii) Artificial Delay, iii) Switch Mode attacks, on copter and rover.
 
 # Building the docker image
 Clone the project
@@ -17,9 +17,16 @@ For easy execution we have provided a script that will start the simultor.
 ```bash
 ./startSimulator.sh copter --console --map
 ```
-To run an existing missions, use this command:
+To run a mission, use this command:
 ```bash
-wp load ../Tools/autotest/ArduPlane-Missions/CMAC-toff-loop.txt
+wp load ../Tools/autotest/mission-1.txt
+takeoff 100
+wp set 2
+mode auto
+```
+When the RV reaches its destination, execute the command
+```bash
+mode land
 ```
 
 # Running ArduPilot locally
@@ -33,8 +40,7 @@ sim_vehicle.py --console --map
 Follow the steps given here http://ardupilot.org/dev/docs/copter-sitl-mavproxy-tutorial.html for further details. 
 
 # Deploying Binaries in Vehicles
-The deployable binaries for Pixhawk2 vehciles are provided. For more information on deploying custom firmware, please follow the instructions given here http://firmware.ardupilot.org/ 
-
+The deployable firmware for Pixhawk2 vehicles are provided. For more information on deploying custom firmware,please follow the instructions given here http://firmware.ardupilot.org/. As firmwares can only be deployed in RVs builton Pixhawk platform, we provide videos showing the effects of the attacks. The demo videos are available here https://bit.ly/2HG9Qnw
 
 
 
