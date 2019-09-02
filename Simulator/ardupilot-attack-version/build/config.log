@@ -1,0 +1,20 @@
+# project  configured on Tue Aug 27 17:57:07 2019 by
+# waf 2.0.9 (abi 20, python 2070cf0 on linux2)
+# using /home/pdash/Documents/Stealthy-Attacks/ardupilot/modules/waf/waf-light configure --board CubeBlack
+#
+----------------------------------------
+Setting top to
+/home/pdash/Documents/Stealthy-Attacks/ardupilot
+----------------------------------------
+Setting out to
+/home/pdash/Documents/Stealthy-Attacks/ardupilot/build
+----------------------------------------
+Autoconfiguration
+enabled
+----------------------------------------
+Setting board to
+CubeBlack
+----------------------------------------
+Using toolchain
+arm-none-eabi
+from /home/pdash/Documents/Stealthy-Attacks/ardupilot: Could not find the program ['arm-none-eabi-ar']
