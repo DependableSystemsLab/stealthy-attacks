@@ -36,8 +36,8 @@ To use a local copy of ArduPilot and trigger the attacks in the simulator use th
 * Clone the Project
 * Run ardupilot locally
 ```bash
-cd stealthy-attacks/ardupilot
-sim_vehicle.py --console --map
+cd stealthy-attacks/Simulator/ardupilot-attack-version/ArduCopter
+../Tools/autotest/sim_vehicle.py --console --map
 ```
 Follow the steps given here http://ardupilot.org/dev/docs/copter-sitl-mavproxy-tutorial.html for further details. 
 
