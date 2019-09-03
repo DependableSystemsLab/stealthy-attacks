@@ -65,7 +65,7 @@ public:
     void initNoAttackTimer();
     int checkNoAttackTimer();
     clock_t tStart, tNow, tAttack, tNoAttack;
-    float falseData = 2.0;
+    float falseData = 0.3;
     bool initTimer, initAttackTime, initNoAttackTime;
 
     int flag = 0;
