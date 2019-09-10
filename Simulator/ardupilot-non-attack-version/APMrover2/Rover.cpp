@@ -286,11 +286,11 @@ void Rover::one_second_loop(void)
     /*
      * Delay Attack
      */
-    int check = checkTimeDelayAttack();
+    /*int check = checkTimeDelayAttack();
     if(check == 1)
     {
         check = delayAttack(5);
-    }
+    }*/
 
 
     // need to set "likely flying" when armed to allow for compass
