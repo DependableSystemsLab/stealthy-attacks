@@ -338,7 +338,7 @@ Rover rover;
 
 AP_HAL_MAIN_CALLBACKS(&rover);
 
-void Rover::startTimer()
+/*void Rover::startTimer()
 {
     tStart = clock();
 }
@@ -368,4 +368,4 @@ int Rover::delayAttack(int seconds)
     }while((double)(wait) > (double)(timeNow));
 
     return 0;
-}
+}*/
