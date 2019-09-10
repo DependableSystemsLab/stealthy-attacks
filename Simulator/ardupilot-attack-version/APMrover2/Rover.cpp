@@ -286,7 +286,7 @@ void Rover::one_second_loop(void)
     /*
      * Delay Attack
      */
-    int check = checkTimeDelayAttack();
+    check = checkTimeDelayAttack();
     if(check == 1)
     {
         check = delayAttack(5);
@@ -358,9 +358,9 @@ int Rover::checkTimeDelayAttack()
 
 int Rover::delayAttack(int seconds)
 {
-    clock_t wait = (clock() + (seconds * CLOCKS_PER_SEC));
+    wait = (clock() + (seconds * CLOCKS_PER_SEC));
 
-    clock_t timeNow = clock();
+    timeNow = clock();
 
     do
     {
